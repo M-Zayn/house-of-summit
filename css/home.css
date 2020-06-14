@@ -3525,10 +3525,10 @@ button {
     width: 100%;
     background-size: 100% 100%;
   }
-  .news .news-content .blog-card:hover .blog-img {
+  .news .news-content .blog-card .blog-img {
     width: 100%;
   }
-  .news .news-content .blog-card:hover .blog-img img {
+  .news .news-content .blog-card .blog-img img {
     width: 100%;
   }
 }
