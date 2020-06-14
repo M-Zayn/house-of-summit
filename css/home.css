@@ -1676,6 +1676,8 @@ button {
   }
   .fixed-menu {
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
@@ -3520,7 +3522,8 @@ button {
     margin: 40px 0 30px 0;
   }
   .news .news-content .blog-card {
-    width: auto;
+    width: 100%;
+    background-size: 100% 100%;
   }
   .news .news-content .blog-card:hover .blog-img img {
     width: 100%;
@@ -3652,6 +3655,7 @@ button {
             flex-direction: column;
     background-image: url("../images/blog-back.png");
     background-position: top;
+    background-size: 100% 100%;
   }
   .events .events-content .events-card .events-body {
     width: auto;
@@ -3749,6 +3753,7 @@ button {
   .photos-gallery .photos-gallery-content .photo-card {
     width: 100%;
     height: 240px;
+    background-size: 100% 100%;
   }
 }
 
@@ -3827,6 +3832,7 @@ button {
   .videos .videos-content .videos-card {
     width: 100%;
     height: 155px;
+    background-size: 100% 100%;
   }
   .videos .videos-content .videos-card .videos-overlay .play-icon img {
     width: 50px;
