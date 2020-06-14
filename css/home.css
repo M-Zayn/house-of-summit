@@ -4252,6 +4252,12 @@ button {
     height: auto;
     padding: 25px 15px;
   }
+  .blog-page .blog-page-content .blog-card .blog-img {
+    width: 100%;
+  }
+  .blog-page .blog-page-content .blog-card .blog-img img {
+    width: 100%;
+  }
   .blog-page .blog-page-content .blog-card .blog-body .title {
     font-size: 16px;
   }
