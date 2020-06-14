@@ -3525,6 +3525,9 @@ button {
     width: 100%;
     background-size: 100% 100%;
   }
+  .news .news-content .blog-card:hover .blog-img {
+    width: 100%;
+  }
   .news .news-content .blog-card:hover .blog-img img {
     width: 100%;
   }
@@ -3662,6 +3665,9 @@ button {
     height: auto;
     padding: 15px 10px;
   }
+  .events .events-content .events-card .events-img {
+    width: 100%;
+  }
   .events .events-content .events-card .events-img img {
     width: 100%;
   }
@@ -3755,6 +3761,10 @@ button {
     height: 240px;
     background-size: 100% 100%;
   }
+  .photos-gallery .photos-gallery-content .photo-card img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 /*------ photos-gallery ------*/
@@ -3833,6 +3843,10 @@ button {
     width: 100%;
     height: 155px;
     background-size: 100% 100%;
+  }
+  .videos .videos-content .videos-card img {
+    width: 100%;
+    height: 100%;
   }
   .videos .videos-content .videos-card .videos-overlay .play-icon img {
     width: 50px;
