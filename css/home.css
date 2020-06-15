@@ -1980,9 +1980,10 @@ button {
     margin: 25px 0 0 0;
   }
   .counter {
-    height: 970px;
+    height: auto;
     margin: 25px 0 0 0;
-    background-size: cover;
+    padding: 70px 0 70px 0;
+    background-size: auto 100%;
   }
   .counter .zx-container {
     -webkit-box-orient: vertical;
@@ -1992,10 +1993,10 @@ button {
   }
   .counter .count {
     width: unset;
-    margin: 30px 0;
+    margin: 20px 0;
   }
   .counter .count p {
-    margin: 0 0 10px 0;
+    margin: 0 0 5px 0;
   }
   .companies {
     padding: 50px 0;
