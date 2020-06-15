@@ -90,6 +90,11 @@ body {
   src: url("../fonts/Tajawal-Bold.ttf");
 }
 
+@font-face {
+  font-family: "ar-black";
+  src: url("../fonts/Tajawal-Black.ttf");
+}
+
 /*
 =====
 LODEARS
@@ -270,12 +275,12 @@ button {
 }
 
 @-webkit-keyframes fade-scale-up-down {
-  0% {
+  100% {
     opacity: 0.9;
     -webkit-transform: translateY(-21%);
             transform: translateY(-21%);
   }
-  100% {
+  0% {
     opacity: 1;
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
@@ -283,12 +288,12 @@ button {
 }
 
 @keyframes fade-scale-up-down {
-  0% {
+  100% {
     opacity: 0.9;
     -webkit-transform: translateY(-21%);
             transform: translateY(-21%);
   }
-  100% {
+  0% {
     opacity: 1;
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
@@ -353,22 +358,42 @@ button {
 }
 
 .search-container .zx-search input::-webkit-input-placeholder {
-  font-family: ar-reg;
+  font-family: sec-reg;
 }
 
 .search-container .zx-search input::-moz-placeholder {
-  font-family: ar-reg;
+  font-family: sec-reg;
 }
 
 .search-container .zx-search input:-ms-input-placeholder {
-  font-family: ar-reg;
+  font-family: sec-reg;
 }
 
 .search-container .zx-search input::-ms-input-placeholder {
-  font-family: ar-reg;
+  font-family: sec-reg;
 }
 
 .search-container .zx-search input::placeholder {
+  font-family: sec-reg;
+}
+
+[dir="rtl"] .search-container .zx-search input::-webkit-input-placeholder {
+  font-family: ar-reg;
+}
+
+[dir="rtl"] .search-container .zx-search input::-moz-placeholder {
+  font-family: ar-reg;
+}
+
+[dir="rtl"] .search-container .zx-search input:-ms-input-placeholder {
+  font-family: ar-reg;
+}
+
+[dir="rtl"] .search-container .zx-search input::-ms-input-placeholder {
+  font-family: ar-reg;
+}
+
+[dir="rtl"] .search-container .zx-search input::placeholder {
   font-family: ar-reg;
 }
 
@@ -433,7 +458,7 @@ button {
 
 [dir="rtl"] .upper-bar .upper-contact > p {
   padding: 0 0 0 35px;
-  font-family: ar-reg;
+  font-family: ar-md;
 }
 
 .upper-bar .upper-contact > p > i {
@@ -473,6 +498,7 @@ button {
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   width: 223px;
+  color: #fff;
 }
 
 .upper-bar .upper-search > input::-webkit-input-placeholder {
@@ -506,23 +532,23 @@ button {
 }
 
 [dir="rtl"] .upper-bar .upper-search > input::-webkit-input-placeholder {
-  font-family: ar-reg;
+  font-family: ar-md;
 }
 
 [dir="rtl"] .upper-bar .upper-search > input::-moz-placeholder {
-  font-family: ar-reg;
+  font-family: ar-md;
 }
 
 [dir="rtl"] .upper-bar .upper-search > input:-ms-input-placeholder {
-  font-family: ar-reg;
+  font-family: ar-md;
 }
 
 [dir="rtl"] .upper-bar .upper-search > input::-ms-input-placeholder {
-  font-family: ar-reg;
+  font-family: ar-md;
 }
 
 [dir="rtl"] .upper-bar .upper-search > input::placeholder {
-  font-family: ar-reg;
+  font-family: ar-md;
 }
 
 .upper-bar .upper-search > input:hover, .upper-bar .upper-search > input:focus {
@@ -606,7 +632,7 @@ button {
 
 [dir="rtl"] .nav-bar .list > li {
   margin: 0 0 0 25px;
-  font-family: ar-md;
+  font-family: ar-bold;
 }
 
 .nav-bar .list > li:last-child {
@@ -629,8 +655,10 @@ button {
   position: absolute;
   top: 40px;
   left: -20px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   min-width: 190px;
-  min-height: 222px;
   background-color: rgba(236, 31, 35, 0.949);
   padding: 7px 10px;
   display: -webkit-box;
@@ -669,7 +697,7 @@ button {
 }
 
 [dir="rtl"] .nav-bar .list .sub-cat-hover li {
-  font-family: ar-reg;
+  font-family: ar-md;
 }
 
 .nav-bar .list .sub-cat-hover li:last-child {
@@ -687,6 +715,30 @@ button {
   transition: all .3s ease-in-out;
 }
 
+.header .slide {
+  position: relative;
+}
+
+.header .slide .inner-slider-text {
+  font-family: e-bold;
+  font-size: 44px;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 1.2;
+  max-width: 920px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-55%);
+          transform: translateY(-55%);
+  left: 130px;
+}
+
+[dir="rtl"] .header .slide .inner-slider-text {
+  font-family: ar-black;
+  left: unset;
+  right: 130px;
+}
+
 .header .owl-carousel {
   position: relative;
 }
@@ -701,7 +753,7 @@ button {
   width: max-content;
   position: absolute;
   right: 100px;
-  bottom: 50%;
+  bottom: 42%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   display: -webkit-box;
@@ -768,7 +820,7 @@ button {
 }
 
 [dir="rtl"] .about-hos .about-header > h4 {
-  font-size: 16px;
+  font-size: 18px;
   font-family: ar-bold;
   letter-spacing: normal;
 }
@@ -837,13 +889,14 @@ button {
 
 .about-hos .about-cert .cert > h3 {
   font-family: r-bold;
+  text-transform: uppercase;
   font-size: 18px;
   color: #343433;
   margin: 25px 0 20px 0;
 }
 
 [dir="rtl"] .about-hos .about-cert .cert > h3 {
-  font-family: ar-bold;
+  font-family: ar-black;
   letter-spacing: normal;
 }
 
@@ -860,8 +913,7 @@ button {
 }
 
 [dir="rtl"] .about-hos .about-cert .cert > p {
-  width: 309px;
-  font-family: ar-reg;
+  font-family: ar-md;
   letter-spacing: normal;
 }
 
@@ -874,7 +926,7 @@ button {
 }
 
 [dir="rtl"] .about-hos .about-cert .cert > p > span {
-  font-family: ar-reg;
+  font-family: ar-bold;
   letter-spacing: normal;
   font-style: italic;
 }
@@ -883,7 +935,7 @@ button {
 /*------ counter start ------*/
 .counter {
   background-image: url(../images/stats-back.jpg);
-  background-size: contain;
+  background-size: 100% 100%;
   background-attachment: local;
   background-position: center;
   background-repeat: no-repeat;
@@ -938,7 +990,7 @@ button {
 }
 
 [dir="rtl"] .counter .count > span {
-  font-family: ar-reg;
+  font-family: ar-md;
   letter-spacing: normal;
 }
 
@@ -962,6 +1014,23 @@ button {
 
 .companies .sp-company {
   margin: 0 80px 0 0;
+}
+
+.companies .sp-company h2 {
+  max-width: 300px;
+  font-family: e-bold;
+  font-size: 48px;
+  color: #343433;
+  line-height: 1;
+  margin: 0;
+}
+
+[dir="rtl"] .companies .sp-company h2 {
+  font-family: ar-black;
+}
+
+.companies .sp-company h2 > span {
+  color: #ec1f23;
 }
 
 [dir="rtl"] .companies .sp-company {
@@ -989,7 +1058,7 @@ button {
 }
 
 [dir="rtl"] .services .servs-header > h5 {
-  font-family: ar-reg;
+  font-family: ar-md;
   letter-spacing: normal;
 }
 
@@ -1076,7 +1145,7 @@ button {
   width: max-content;
   position: absolute;
   left: 50%;
-  bottom: -53px;
+  bottom: -40px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
@@ -1116,7 +1185,8 @@ button {
 }
 
 [dir="rtl"] .featured .feat-header > h5 {
-  font-family: ar-reg;
+  font-size: 20px;
+  font-family: ar-md;
   letter-spacing: normal;
 }
 
@@ -1205,7 +1275,7 @@ button {
 }
 
 [dir="rtl"] .featured .project .overlay {
-  font-family: ar-reg;
+  font-family: ar-md;
   letter-spacing: normal;
 }
 
@@ -1235,7 +1305,8 @@ button {
 }
 
 [dir="rtl"] .blog .blog-header > h5 {
-  font-family: ar-reg;
+  font-family: ar-md;
+  font-size: 20px;
   letter-spacing: normal;
 }
 
@@ -1281,7 +1352,7 @@ button {
 }
 
 [dir="rtl"] .blog .blog-card .blog-body .date {
-  font-family: ar-reg;
+  font-family: ar-md;
   letter-spacing: normal;
 }
 
@@ -1313,7 +1384,7 @@ button {
 }
 
 [dir="rtl"] .blog .blog-card .blog-body .text-content {
-  font-family: ar-reg;
+  font-family: ar-md;
   letter-spacing: normal;
 }
 
@@ -1341,7 +1412,7 @@ button {
   width: max-content;
   position: absolute;
   left: 50%;
-  bottom: -53px;
+  bottom: -35px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
@@ -1383,7 +1454,7 @@ button {
 }
 
 [dir="rtl"] .footer .footer-contact {
-  width: 373px;
+  width: 380px;
   margin: 0 0 0 100px;
 }
 
@@ -1417,7 +1488,7 @@ button {
 }
 
 [dir="rtl"] .footer .footer-contact .contact-ul > li {
-  font-family: ar-reg;
+  font-family: ar-md;
   letter-spacing: normal;
 }
 
@@ -1497,7 +1568,7 @@ button {
 }
 
 [dir="rtl"] .footer .footer-list ul {
-  font-family: ar-reg;
+  font-family: ar-md;
   letter-spacing: normal;
 }
 
@@ -1606,7 +1677,7 @@ button {
 
 [dir="rtl"] .footer .icons .icon-ancor {
   margin: 0 0 0 20px;
-  font-family: ar-reg;
+  font-family: ar-md;
 }
 
 .footer .icons .icon-ancor:last-child {
@@ -1769,10 +1840,13 @@ button {
     content: "";
   }
   .fixed-menu .main-list > li {
-    font-family: ar-reg;
+    font-family: sec-reg;
     font-size: 16px;
     color: #444;
     margin: 14px 0;
+  }
+  [dir="rtl"] .fixed-menu .main-list > li {
+    font-family: ar-reg;
   }
   .fixed-menu .main-list > li a {
     font-family: inherit;
@@ -1816,10 +1890,13 @@ button {
     content: "";
   }
   .fixed-menu .sub-list li {
-    font-family: ar-reg;
+    font-family: sec-reg;
     font-size: 16px;
     color: #444;
     margin: 10px 0;
+  }
+  [dir="rtl"] .fixed-menu .sub-list li {
+    font-family: ar-reg;
   }
   .fixed-menu .sub-list li a {
     font-family: inherit;
@@ -1831,43 +1908,48 @@ button {
     display: none;
   }
   .fixed-menu .sub-list-copy li {
-    font-family: ar-reg;
+    font-family: sec-reg;
     font-size: 15px;
     color: #444;
+  }
+  [dir="rtl"] .fixed-menu .sub-list-copy li {
+    font-family: ar-reg;
   }
   .fixed-menu .sub-list-copy li a {
     font-family: inherit;
     font-size: inherit;
     color: inherit;
   }
+  .header .slide .inner-slider-text {
+    font-size: 20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    padding: 0 20px;
+  }
+  [dir="rtl"] .header .slide .inner-slider-text {
+    left: 0;
+    right: 0;
+  }
   .header .owl-carousel .owl-nav {
     display: none;
   }
   .header .owl-carousel .owl-dots {
-    bottom: 15px;
-    right: unset;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    -webkit-box-orient: unset;
-    -webkit-box-direction: unset;
-        -ms-flex-direction: unset;
-            flex-direction: unset;
+    right: 15px;
+    bottom: 50%;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
   }
   [dir="rtl"] .header .owl-carousel .owl-dots {
-    left: 50%;
-  }
-  .header .owl-carousel .owl-dots .owl-dot {
-    margin: 0 5px;
+    right: unset;
+    left: 15px;
   }
   .about-hos .about-header {
-    width: 100%;
-    position: relative;
-    top: unset;
-    left: unset;
-    -webkit-transform: unset;
-            transform: unset;
-    padding: 25px 15px;
+    width: 94%;
+    top: -35px;
+    padding: 35px 15px;
     margin: 10px 0 30px 0;
   }
   .about-hos .about-header .text-content {
@@ -1881,18 +1963,21 @@ button {
     text-align: center !important;
   }
   .about-hos .about-header .text-content p:nth-of-type(1) {
-    font-size: 17px;
+    font-size: 24px;
     line-height: 1.4;
     margin: 0 0 15px 0;
   }
   .about-hos .about-header .text-content p:nth-of-type(2) {
-    font-size: 15px;
+    font-size: 16px;
   }
   .about-hos .about-cert {
-    margin: 25px 0 0 0;
+    margin: 420px 0 0 0;
   }
   .about-hos .about-cert .cert {
-    margin: 0 0 25px 0;
+    margin: 0 0 55px 0;
+  }
+  .about-hos .about-cert .cert > p > span {
+    margin: 25px 0 0 0;
   }
   .counter {
     height: 970px;
@@ -1931,7 +2016,7 @@ button {
     margin: 15px 0;
   }
   .services {
-    padding: 35px 0 90px 0;
+    padding: 50px 0 100px 0;
   }
   .services .servs-header > h5 {
     font-size: 15px;
@@ -1960,13 +2045,14 @@ button {
     margin: 0 auto 10px auto;
   }
   .blog {
-    padding: 50px 0 90px 0;
+    padding: 70px 0 100px 0;
   }
   .blog .blog-header > h5 {
     font-size: 15px;
   }
   .blog .blog-header > h1 {
     font-size: 30px;
+    margin: 25px 0 30px 0;
   }
   .footer .footer-contact {
     width: unset;
@@ -2223,7 +2309,7 @@ button {
 }
 
 [dir="rtl"] .inner-header .path {
-  font-family: ar-reg;
+  font-family: ar-md;
   letter-spacing: normal;
 }
 
@@ -2338,7 +2424,7 @@ button {
 }
 
 [dir="rtl"] .history .history-content .year .text-content .yead-disc {
-  font-family: ar-reg;
+  font-family: ar-md;
 }
 
 @media (max-width: 992px) {
@@ -2420,7 +2506,7 @@ button {
 [dir="rtl"] .vision-mision .vision-mision-content .vision .v-title > h2 {
   font-family: ar-bold;
   letter-spacing: normal;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .vision-mision .vision-mision-content .vision .v-title > h2::after {
@@ -2464,7 +2550,7 @@ button {
 }
 
 [dir="rtl"] .vision-mision .vision-mision-content .vision .inner-text > p:nth-of-type(2) {
-  font-family: ar-reg;
+  font-family: ar-md;
 }
 
 .vision-mision .vision-mision-content .mision {
@@ -2511,7 +2597,7 @@ button {
 }
 
 [dir="rtl"] .vision-mision .vision-mision-content .mision .inner-content .card-note {
-  font-family: ar-reg;
+  font-family: ar-md;
 }
 
 @media (max-width: 992px) {
@@ -2550,7 +2636,7 @@ button {
 }
 
 [dir="rtl"] .branches .branches-content .branch-lorem {
-  font-family: ar-reg;
+  font-family: ar-md;
 }
 
 .branches .branches-content .branch-lorem > span {
@@ -2598,11 +2684,6 @@ button {
           align-items: center;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
-}
-
-.branches .branches-location .location:hover {
-  -webkit-animation: fade-scale-up-down 1.5s infinite alternate;
-          animation: fade-scale-up-down 1.5s infinite alternate;
 }
 
 .branches .branches-location .location img {
@@ -2711,7 +2792,7 @@ button {
 }
 
 [dir="rtl"] .faq .faq-content .faq-nav .faq-nav-tabs > li {
-  font-family: ar-reg;
+  font-family: ar-md;
 }
 
 .faq .faq-content .faq-nav .faq-nav-tabs > li > a.active {
@@ -2810,7 +2891,7 @@ button {
 
 [dir="rtl"] .faq .faq-content .faq-tabs .tab .tab-body {
   padding: 0 37px 0 0;
-  font-family: ar-reg;
+  font-family: ar-md;
 }
 
 .faq .faq-content .faq-tabs .tab .tab-body.active {
@@ -2875,6 +2956,7 @@ button {
 
 [dir="rtl"] .services-overview .services-overview-content .service-title .s-title > h2 {
   font-family: ar-bold;
+  font-size: 18px;
   letter-spacing: normal;
 }
 
@@ -2911,7 +2993,7 @@ button {
 }
 
 [dir="rtl"] .services-overview .services-overview-content .service-title .inner-text > p:nth-of-type(2) {
-  font-family: ar-reg;
+  font-family: ar-md;
 }
 
 .services-overview .services-overview-content .inner-services {
@@ -2998,7 +3080,7 @@ button {
 }
 
 [dir="rtl"] .services-overview .services-overview-content .inner-services .year .img-related .overlay {
-  font-family: ar-reg;
+  font-family: ar-md;
   letter-spacing: normal;
 }
 
@@ -3033,7 +3115,7 @@ button {
 }
 
 [dir="rtl"] .services-overview .services-overview-content .inner-services .year .text-content .yead-disc {
-  font-family: ar-reg;
+  font-family: ar-md;
 }
 
 .services-overview .services-overview-content .inner-services .year .text-content .yead-disc ul {
@@ -3129,7 +3211,7 @@ button {
 }
 
 [dir="rtl"] .oil-gas .oil-gas-content .oil-gas-header .inner-text > p {
-  font-family: ar-reg;
+  font-family: ar-md;
 }
 
 .oil-gas .oil-gas-content .oil-gas-services {
@@ -3196,7 +3278,7 @@ button {
 }
 
 [dir="rtl"] .oil-gas .oil-gas-content .oil-gas-services .oil-gas-serv .servs-text {
-  font-family: ar-reg;
+  font-family: ar-md;
 }
 
 @media (max-width: 992px) {
@@ -3235,7 +3317,7 @@ button {
 }
 
 [dir="rtl"] .metals-services .metals-services-content .metals-services-header .inner-text > p {
-  font-family: ar-reg;
+  font-family: ar-md;
 }
 
 @media (max-width: 992px) {
@@ -3341,7 +3423,7 @@ button {
 }
 
 [dir="rtl"] .other-services .other-services-content .year .img-related .overlay {
-  font-family: ar-reg;
+  font-family: ar-md;
   letter-spacing: normal;
 }
 
@@ -3368,7 +3450,7 @@ button {
 }
 
 [dir="rtl"] .other-services .other-services-content .year .text-content .yead-disc {
-  font-family: ar-reg;
+  font-family: ar-md;
 }
 
 @media (max-width: 992px) {
@@ -3475,7 +3557,7 @@ button {
 }
 
 [dir="rtl"] .news .news-content .blog-card .blog-body .date {
-  font-family: ar-reg;
+  font-family: ar-md;
   letter-spacing: normal;
 }
 
@@ -3507,7 +3589,7 @@ button {
 }
 
 [dir="rtl"] .news .news-content .blog-card .blog-body .text-content {
-  font-family: ar-reg;
+  font-family: ar-md;
   letter-spacing: normal;
 }
 
@@ -3604,7 +3686,7 @@ button {
 }
 
 [dir="rtl"] .events .events-content .events-card .events-body .date-loc {
-  font-family: ar-reg;
+  font-family: ar-md;
   letter-spacing: normal;
 }
 
@@ -3635,7 +3717,7 @@ button {
 }
 
 [dir="rtl"] .events .events-content .events-card .events-body .text-content {
-  font-family: ar-reg;
+  font-family: ar-md;
   letter-spacing: normal;
 }
 
@@ -3878,7 +3960,7 @@ button {
 }
 
 [dir="rtl"] .future-development .future-development-content .future-development-header .inner-text > p {
-  font-family: ar-reg;
+  font-family: ar-md;
 }
 
 @media (max-width: 992px) {
@@ -3944,7 +4026,7 @@ button {
 }
 
 [dir="rtl"] .business-partners .business-partners-content .business-partners-header .website-btn > a {
-  font-family: ar-md;
+  font-family: ar-bold;
 }
 
 .business-partners .business-partners-content .business-partners-header .website-btn > a:hover {
@@ -3961,7 +4043,7 @@ button {
 }
 
 [dir="rtl"] .business-partners .business-partners-content .business-partners-header .inner-text > p {
-  font-family: ar-reg;
+  font-family: ar-md;
 }
 
 @media (max-width: 992px) {
@@ -4036,23 +4118,23 @@ button {
 }
 
 [dir="rtl"] .blog-page .blog-page-content .blog-search > input::-webkit-input-placeholder {
-  font-family: ar-reg;
+  font-family: ar-md;
 }
 
 [dir="rtl"] .blog-page .blog-page-content .blog-search > input::-moz-placeholder {
-  font-family: ar-reg;
+  font-family: ar-md;
 }
 
 [dir="rtl"] .blog-page .blog-page-content .blog-search > input:-ms-input-placeholder {
-  font-family: ar-reg;
+  font-family: ar-md;
 }
 
 [dir="rtl"] .blog-page .blog-page-content .blog-search > input::-ms-input-placeholder {
-  font-family: ar-reg;
+  font-family: ar-md;
 }
 
 [dir="rtl"] .blog-page .blog-page-content .blog-search > input::placeholder {
-  font-family: ar-reg;
+  font-family: ar-md;
 }
 
 .blog-page .blog-page-content .blog-search > input:hover, .blog-page .blog-page-content .blog-search > input:focus {
@@ -4127,7 +4209,7 @@ button {
 }
 
 [dir="rtl"] .blog-page .blog-page-content .blog-cats .cat-select > li {
-  font-family: ar-reg;
+  font-family: ar-md;
 }
 
 .blog-page .blog-page-content .blog-card {
@@ -4179,7 +4261,7 @@ button {
 }
 
 [dir="rtl"] .blog-page .blog-page-content .blog-card .blog-body .date {
-  font-family: ar-reg;
+  font-family: ar-md;
   letter-spacing: normal;
 }
 
@@ -4210,7 +4292,7 @@ button {
 }
 
 [dir="rtl"] .blog-page .blog-page-content .blog-card .blog-body .text-content {
-  font-family: ar-reg;
+  font-family: ar-md;
   letter-spacing: normal;
 }
 
@@ -4223,7 +4305,7 @@ button {
 }
 
 [dir="rtl"] .blog-page .blog-page-content .blog-card .blog-body .read-more {
-  font-family: ar-reg;
+  font-family: ar-md;
   letter-spacing: normal;
 }
 
@@ -4332,7 +4414,7 @@ button {
 }
 
 [dir="rtl"] .contact-page .contact-page-content .contact-info-container .contact-info .contact-info-list > li {
-  font-family: ar-reg;
+  font-family: ar-md;
 }
 
 .contact-page .contact-page-content .contact-info-container .contact-info .contact-info-list > li > a {
@@ -4461,7 +4543,7 @@ button {
 }
 
 [dir="rtl"] .contact-page .contact-page-content .contact-form input, [dir="rtl"] .contact-page .contact-page-content .contact-form textarea {
-  font-family: ar-reg;
+  font-family: ar-md;
 }
 
 .contact-page .contact-page-content .contact-form input::-webkit-input-placeholder, .contact-page .contact-page-content .contact-form textarea::-webkit-input-placeholder {
@@ -4495,23 +4577,23 @@ button {
 }
 
 [dir="rtl"] .contact-page .contact-page-content .contact-form input::-webkit-input-placeholder, [dir="rtl"] .contact-page .contact-page-content .contact-form textarea::-webkit-input-placeholder {
-  font-family: ar-reg;
+  font-family: ar-md;
 }
 
 [dir="rtl"] .contact-page .contact-page-content .contact-form input::-moz-placeholder, [dir="rtl"] .contact-page .contact-page-content .contact-form textarea::-moz-placeholder {
-  font-family: ar-reg;
+  font-family: ar-md;
 }
 
 [dir="rtl"] .contact-page .contact-page-content .contact-form input:-ms-input-placeholder, [dir="rtl"] .contact-page .contact-page-content .contact-form textarea:-ms-input-placeholder {
-  font-family: ar-reg;
+  font-family: ar-md;
 }
 
 [dir="rtl"] .contact-page .contact-page-content .contact-form input::-ms-input-placeholder, [dir="rtl"] .contact-page .contact-page-content .contact-form textarea::-ms-input-placeholder {
-  font-family: ar-reg;
+  font-family: ar-md;
 }
 
 [dir="rtl"] .contact-page .contact-page-content .contact-form input::placeholder, [dir="rtl"] .contact-page .contact-page-content .contact-form textarea::placeholder {
-  font-family: ar-reg;
+  font-family: ar-md;
 }
 
 .contact-page .contact-page-content .contact-form input:hover, .contact-page .contact-page-content .contact-form input:focus, .contact-page .contact-page-content .contact-form textarea:hover, .contact-page .contact-page-content .contact-form textarea:focus {
@@ -4552,7 +4634,7 @@ button {
 }
 
 [dir="rtl"] .contact-page .contact-page-content .contact-form .bootstrap-select .dropdown-toggle .filter-option {
-  font-family: ar-reg;
+  font-family: ar-md;
   text-align: right;
 }
 
@@ -4600,7 +4682,7 @@ button {
 }
 
 [dir="rtl"] .contact-page .contact-page-content .contact-form .send-btn > a {
-  font-family: ar-md;
+  font-family: ar-bold;
 }
 
 .contact-page .contact-page-content .contact-form .send-btn > a:hover {
