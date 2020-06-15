@@ -1145,7 +1145,7 @@ button {
   width: max-content;
   position: absolute;
   left: 50%;
-  bottom: -40px;
+  bottom: -53px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
@@ -1412,7 +1412,7 @@ button {
   width: max-content;
   position: absolute;
   left: 50%;
-  bottom: -35px;
+  bottom: -53px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
@@ -2028,6 +2028,9 @@ button {
   .services .serv {
     margin: 0 auto;
   }
+  .services .owl-carousel .owl-dots {
+    bottom: -40px;
+  }
   .featured {
     padding: 70px 0;
   }
@@ -2053,6 +2056,9 @@ button {
   .blog .blog-header > h1 {
     font-size: 30px;
     margin: 25px 0 30px 0;
+  }
+  .blog .owl-carousel .owl-dots {
+    bottom: -35px;
   }
   .footer .footer-contact {
     width: unset;
