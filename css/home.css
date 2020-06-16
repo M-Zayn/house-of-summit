@@ -310,14 +310,14 @@ button {
   z-index: 9999;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(236, 31, 35, 0.9);
 }
 
 .search-container .close {
   opacity: 0.9;
-  width: 30px;
-  height: 30px;
-  background-color: #ec1f23;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -373,27 +373,27 @@ button {
 }
 
 .search-container .zx-search input::-webkit-input-placeholder {
-  font-family: sec-reg;
+  font-family: reg;
   color: #fff;
 }
 
 .search-container .zx-search input::-moz-placeholder {
-  font-family: sec-reg;
+  font-family: reg;
   color: #fff;
 }
 
 .search-container .zx-search input:-ms-input-placeholder {
-  font-family: sec-reg;
+  font-family: reg;
   color: #fff;
 }
 
 .search-container .zx-search input::-ms-input-placeholder {
-  font-family: sec-reg;
+  font-family: reg;
   color: #fff;
 }
 
 .search-container .zx-search input::placeholder {
-  font-family: sec-reg;
+  font-family: reg;
   color: #fff;
 }
 
@@ -418,7 +418,7 @@ button {
 }
 
 .search-container .zx-search input:hover, .search-container .zx-search input:focus {
-  border-bottom: 1px solid #ec1f23;
+  border-bottom: 1px solid #fff;
 }
 
 .search-container .zx-search button {
@@ -442,7 +442,7 @@ button {
 }
 
 .search-container .zx-search button:hover {
-  color: #ec1f23;
+  color: #000;
 }
 
 /*------ upper start ------*/
@@ -586,15 +586,14 @@ button {
   font-family: ar-reg;
   font-size: 14px;
   color: #ffffff;
-  border-bottom: 1px solid #ffffff80;
   border-radius: 2px;
   padding: 4px 8px;
-  margin: -5px 0 0 10px;
+  margin: 0px 0 0 10px;
 }
 
 [dir="rtl"] .upper-bar .upper-search .lang-switcher {
   font-family: reg;
-  margin: -5px 10px 0 0;
+  margin: 0px 10px 0 0;
 }
 
 /*------ upper end ------*/
@@ -1762,13 +1761,13 @@ button {
     display: none;
   }
   .nav-place {
-    height: 88px;
+    height: 70px;
   }
   .nav-bar {
-    height: 88px;
+    height: 70px;
   }
   .nav-bar .logo-container .logo {
-    width: 40px;
+    width: 30px;
   }
   .nav-bar .list {
     display: none;
@@ -1785,7 +1784,7 @@ button {
             align-items: center;
   }
   .nav-bar .nav-icons a {
-    font-size: 22px;
+    font-size: 20px;
     margin: 0 10px;
   }
   .lang-switcher {
@@ -1873,13 +1872,13 @@ button {
     color: #ffffff;
     position: absolute;
     top: 5px;
-    left: 60px;
+    left: 77px;
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
   }
   [dir="ltr"] .fixed-menu .main-list .slide::after {
     left: unset;
-    right: 60px;
+    right: 77px;
   }
   .fixed-menu .main-list .slide.active {
     color: #ffffff;
@@ -1891,10 +1890,11 @@ button {
     content: "";
   }
   .fixed-menu .main-list > li {
-    font-family: sec-reg;
+    font-family: reg;
     font-size: 16px;
     color: #ffffff;
-    margin: 14px 0;
+    text-transform: uppercase;
+    margin: 15px 0;
   }
   [dir="rtl"] .fixed-menu .main-list > li {
     font-family: ar-reg;
@@ -1942,10 +1942,10 @@ button {
     content: "";
   }
   .fixed-menu .sub-list li {
-    font-family: sec-reg;
+    font-family: reg;
     font-size: 16px;
     color: #ffffff;
-    margin: 10px 0;
+    margin: 12px 0;
   }
   [dir="rtl"] .fixed-menu .sub-list li {
     font-family: ar-reg;
@@ -2271,7 +2271,7 @@ button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 30px 0 15px 0;
+    margin: 30px 0 0 0;
   }
   .footer .copyrights {
     -webkit-box-ordinal-group: 3;
@@ -2685,8 +2685,11 @@ button {
     margin: 0 0 40px 0;
   }
   .vision-mision .vision-mision-content .mision .m-title > h2 {
-    font-size: 40px;
+    font-size: 50px;
     margin: 50px 0 40px 0;
+  }
+  [dir="rtl"] .vision-mision .vision-mision-content .mision .m-title > h2 {
+    font-size: 70px;
   }
   .vision-mision .vision-mision-content .mision .inner-content .card-note {
     left: 50% !important;
