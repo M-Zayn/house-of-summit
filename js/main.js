@@ -10,11 +10,7 @@ $(window).on("load", function () {
 });
 
 
-if ($(window).width() > 992) {
   new WOW().init();
- }
-
-
   $('.selectpicker').selectpicker();
   
   
@@ -46,7 +42,7 @@ $(function() {
 
     // fixed nav
     if ($(window).width() < 992) {
-      
+
       $(".upper-bar").remove();
       $(".nav-bar").addClass("fixed-nav");
       $(".nav-place").addClass("show");
