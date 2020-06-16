@@ -433,7 +433,7 @@ $(function() {
                     clearInterval(typerw);
                 }
                 
-            }, 100);
+            }, 50);
 
 
 
