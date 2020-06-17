@@ -310,7 +310,7 @@ button {
   z-index: 9999;
   width: 100%;
   height: 100%;
-  background-color: rgba(236, 31, 35, 0.9);
+  background-color: #ec1f23;
 }
 
 .search-container .close {
@@ -1861,43 +1861,42 @@ button {
     -webkit-transform: translateY(50%);
             transform: translateY(50%);
   }
-  .fixed-menu .main-list .slide {
-    cursor: pointer;
+  .fixed-menu .main-list .slide > a {
     position: relative;
   }
-  .fixed-menu .main-list .slide::after {
+  .fixed-menu .main-list .slide > a::after {
     content: "";
     font-family: "Linearicons-Free";
     font-size: 8px;
     color: #ffffff;
     position: absolute;
     top: 5px;
-    left: 77px;
+    left: -15px;
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
   }
-  [dir="ltr"] .fixed-menu .main-list .slide::after {
+  [dir="ltr"] .fixed-menu .main-list .slide > a::after {
     left: unset;
-    right: 77px;
+    right: -15px;
   }
-  .fixed-menu .main-list .slide.active {
+  .fixed-menu .main-list .slide > a.active {
     color: #ffffff;
   }
-  .fixed-menu .main-list .slide.active::after {
+  .fixed-menu .main-list .slide > a.active::after {
     content: "";
   }
-  [dir="ltr"] .fixed-menu .main-list .slide.active::after {
+  [dir="ltr"] .fixed-menu .main-list .slide > a.active::after {
     content: "";
   }
   .fixed-menu .main-list > li {
-    font-family: reg;
+    font-family: md;
     font-size: 16px;
     color: #ffffff;
     text-transform: uppercase;
     margin: 15px 0;
   }
   [dir="rtl"] .fixed-menu .main-list > li {
-    font-family: ar-reg;
+    font-family: ar-bold;
   }
   .fixed-menu .main-list > li a {
     font-family: inherit;
