@@ -204,9 +204,9 @@ $(function() {
 
 
     // fixed menu
-    $(".fixed-menu .main-list .slide").on("click", function() {
+    $(".fixed-menu .main-list .slide >a").on("click", function() {
       $(this).toggleClass("active");
-      $(this).children("ul").slideToggle();
+      $(this).parent().children("ul").slideToggle();
       });
     $(".fixed-menu .sub-list .slide-two").on("click", function(e) {
       e.stopPropagation();
